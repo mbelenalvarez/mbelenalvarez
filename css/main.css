@@ -354,11 +354,11 @@ button, input, select, textarea {
 
     .cards {
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: "card1 card1 card1
-                            card2 card2 card2
-                            card3 card3 card3"
+        grid-template-columns: 1rem;
+        grid-template-rows: 1rem;
+        grid-template-areas: "card1 
+                            card2
+                            card3"
     }
 
     .card1 {
