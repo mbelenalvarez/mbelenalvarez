@@ -386,15 +386,15 @@ div .card3 {
                             "card3 card3 card3";
     }
 
-    .card1 {
+    div .card1 {
         grid-area: card1;
     }
 
-    .card2 {
+    div .card2 {
         grid-area: card2;
     }
 
-    .card3 {
+    div .card3 {
         grid-area: card3;
     }
 }
