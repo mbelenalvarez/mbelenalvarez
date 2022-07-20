@@ -15,12 +15,13 @@
 }
 
 header img{
-    width: 10vh;
+    width: 4vw;
+    height: 8vh;
 }
 
 header nav ul {
     display: flex;
-    margin: 0.8rem;
+    margin: 0.2rem;
 }
 
 nav ul li a {
@@ -31,7 +32,7 @@ nav ul li a {
 
 nav ul li {
     background-color: #88ada4;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: normal;
     margin: 0.2rem;
     padding: 0.2rem;
@@ -196,9 +197,18 @@ button, input, select, textarea {
     border-style: bold;
 }
 
+.formContacto {
+    grid-template-columns: 1rem;
+    grid-template-rows: 1rem;
+    grid-template-areas: "nombre nombre img img"
+                        "mail mail img img"
+                        "numero numero img img"
+                        "mensaje mensaje img img";
+}
+
 .formContacto img {
-    width: 40vw;
-    height: 40vh;
+    width: 30%;
+    height: 30%;
     grid-area: img;
 }
 
@@ -397,4 +407,6 @@ div .card3 {
     div .card3 {
         grid-area: card3;
     }
+
+    
 }
