@@ -24,7 +24,7 @@ header nav ul {
     margin: 0.2rem;
 }
 
-nav ul li a {
+.colorTexto {
     text-decoration: none;
     list-style: none;
     color: beige;
