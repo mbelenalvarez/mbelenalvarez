@@ -198,34 +198,12 @@ button, input, select, textarea {
 }
 
 .formContacto {
-    grid-template-columns: 1rem;
-    grid-template-rows: 1rem;
-    grid-template-areas: "nombre nombre img img"
-                        "mail mail img img"
-                        "numero numero img img"
-                        "mensaje mensaje img img";
+    display: flex;
+    justify-content: space-around;
 }
 
-.formContacto img {
+.imagenContacto {
     width: 30%;
-    height: 30%;
-    grid-area: img;
-}
-
-.nombre {
-    grid-area: nombre;
-}
-
-.mail {
-    grid-area: mail;
-}
-
-.numero {
-    grid-area: numero;
-}
-
-.mensaje {
-    grid-area: mensaje;
 }
 
 /* mis trabajos */
@@ -390,7 +368,7 @@ div .card3 {
     .cards {
         display: grid;
         grid-template-columns: 1rem;
-        grid-template-rows: 1rem;
+        grid-template-rows: 20rem;
         grid-template-areas: "card1 card1 card1" 
                             "card2 card2 card2"
                             "card3 card3 card3";
