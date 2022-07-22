@@ -10,7 +10,11 @@
     background-color: #fdebde;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+}
+
+.navbarSupportedContent {
     display: flex;
+    justify-content: end;
 }
 
 header img{
