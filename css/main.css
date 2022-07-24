@@ -10,14 +10,10 @@
     background-color: #fdebde;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    text-align: center;
 }
 
-.navbarSupportedContent {
-    display: flex;
-    justify-content: end;
-}
-
-header img{
+.imagenMenu {
     width: 4vw;
     height: 8vh;
 }
@@ -31,12 +27,12 @@ header nav ul {
     text-decoration: none;
     list-style: none;
     color: beige;
+    text-align: center;
 }
 
-nav ul li {
+nav ul li a {
     background-color: #88ada4;
-    font-size: 1.2rem;
-    font-weight: normal;
+    font-size: 1rem;
     margin: 0.2rem;
     padding: 0.2rem;
     position: relative;
@@ -47,7 +43,6 @@ nav ul li {
 
 nav ul li:hover {
     transform: scale(1.2);
-    box-shadow: 1.5px 1.5px black;
 }
 
 .mainIndex {
@@ -304,14 +299,9 @@ div .card3 {
 }
 
 @media screen and (max-width:600px) {    
-    header img {
-        width: 11vw;
-        height: 8vh;
-    }
-
-    header nav ul li {
-        border-radius: 0.5rem;
-        font-size: 100%;
+    .imagenMenu img {
+        width: 4vw;
+        height: 4vh;
     }
 
     .menuTextoInterno {
