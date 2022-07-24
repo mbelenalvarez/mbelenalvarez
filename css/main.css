@@ -18,31 +18,23 @@
     height: 8vh;
 }
 
-header nav ul {
-    display: flex;
-    margin: 0.2rem;
-}
-
 .colorTexto {
     text-decoration: none;
     list-style: none;
-    color: beige;
+    color: #88ada4;
     text-align: center;
 }
 
 nav ul li a {
-    background-color: #88ada4;
     font-size: 1rem;
-    margin: 0.2rem;
-    padding: 0.2rem;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 1rem;
     overflow: hidden;
 }
 
 nav ul li:hover {
     transform: scale(1.2);
+    color: aquamarine;
 }
 
 .mainIndex {
