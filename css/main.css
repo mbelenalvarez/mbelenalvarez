@@ -65,11 +65,10 @@ header nav div ul li a:hover {
     background-color: #88ada4;
     color: beige;
     font-size: 1.2rem;
-    text-decoration: none;
-    list-style: none;
     border-radius: 1rem;
     grid-area: menuBoton;
     text-align: center;
+    text-decoration: none;
 }
 
 .menuBoton:hover {
@@ -102,6 +101,20 @@ footer {
     background-color: #88ada4;
     display: flex;
     justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.misDatos {
+    padding: 1.5rem;
+}
+
+footer div h4 {
+    color: crimson;
+    font-size: 1.3em;
+}
+
+footer div h3 {
+    font-size: 1rem;
 }
 
 footer div ul li {
@@ -110,8 +123,10 @@ footer div ul li {
 }
 
 footer div ul li a {
-    color: crimson
+    color: crimson;
+    text-decoration: none;
 }
+
 
 /* quien soy */
 
@@ -280,7 +295,7 @@ div .card3 {
 
 @media screen and (max-width:600px) {    
     .imagenMenu {
-        width: 590px;
+        width: 10vw;
     }
 
     .menuTextoInterno {
