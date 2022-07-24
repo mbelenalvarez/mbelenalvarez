@@ -32,31 +32,34 @@ nav ul li a {
     overflow: hidden;
 }
 
-nav ul li:hover {
+header nav div ul li a:hover {
     transform: scale(1.2);
     color: aquamarine;
 }
 
+/* Home */
+
 .mainIndex {
-    background-image: url(../multimedia/fondoMarmol.jpg); 
-    height: 30vh;
+    background-image: url(../multimedia/fondo.jpg); 
+    opacity: 20;
+    height: 80vh;
     width: 100vw;
     text-decoration: none;
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "menuTextoInterno menuTextoInterno"
-                        "menuBoton menuBoton";
-    justify-content: space-between;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr;
+    grid-template-areas: "menuTextoInterno menuTextoInterno menuTextoInterno"
+                        "menuBoton menuBoton menuBoton";
+    justify-content: center;
     align-items: center;
     justify-items: center;
 }
 
 .menuTextoInterno {
-    color: crimson;
-    text-shadow: 2px 2px beige;
+    color: rgba(0, 0, 0, 0.77);
     grid-area: menuTextoInterno;
+    text-align: center;
 }
 
 .menuBoton {
@@ -66,8 +69,6 @@ nav ul li:hover {
     text-decoration: none;
     list-style: none;
     border-radius: 1rem;
-    padding: 0.2rem;
-    margin: 0.2rem;
     grid-area: menuBoton;
     text-align: center;
 }
