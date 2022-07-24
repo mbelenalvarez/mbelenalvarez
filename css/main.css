@@ -41,7 +41,6 @@ header nav div ul li a:hover {
 
 .mainIndex {
     background-image: url(../multimedia/fondo.jpg); 
-    opacity: 20;
     height: 80vh;
     width: 100vw;
     text-decoration: none;
@@ -65,7 +64,7 @@ header nav div ul li a:hover {
 .menuBoton {
     background-color: #88ada4;
     color: beige;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
     text-decoration: none;
     list-style: none;
     border-radius: 1rem;
@@ -73,10 +72,10 @@ header nav div ul li a:hover {
     text-align: center;
 }
 
-.imagenMujer {
-    width: 0.1%; 
-    display: none;
-}
+.menuBoton:hover {
+    transform: scale(1.2rem);
+    box-shadow: black 2px 2px;
+} 
 
 /*lorem, titulos y footer*/ 
 
@@ -274,22 +273,6 @@ div .card3 {
 }
 
 /* media queries */
-
-@media screen and (min-width:600px) {
-
-    .imagenMujer {
-        display: block;
-        grid-area: imagenMujer;
-    }
-
-    .mainIndex {
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "menuTextoInterno imagenMujer"
-                            "menuBoton imagenMujer";
-    }
-
-}
 
 @media screen and (max-width:600px) {    
     .imagenMenu img {
