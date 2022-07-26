@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* menu principal */
 
 .header {
     background-color: #fdebde;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
 }
@@ -28,7 +28,6 @@
 nav ul li a {
     font-size: 1rem;
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
 }
 
@@ -90,7 +89,6 @@ header nav div ul li a:hover {
 .titulos {
     padding: 0.5rem;
     margin: 0.5rem;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-style: italic;
     color: crimson;
@@ -186,7 +184,6 @@ form fieldset {
 form fieldset legend{
     background-color: #88ada4;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
@@ -197,7 +194,6 @@ form fieldset legend{
 
 button, input, select, textarea {
     background-color: #88ada4;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 80%;
     border-radius: 0.3rem;
     margin: 0.3rem;
@@ -237,7 +233,6 @@ div .card3 {
 .btn {
     background-color: #88ada4;
     color: beige;
-    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     list-style: none;
     border-radius: 0.5rem;
@@ -276,7 +271,6 @@ div .card3 {
 .boton { 
     background-color: #88ada4;
     color: beige;
-    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     list-style: none;
     border-radius: 0.5rem;
@@ -293,7 +287,17 @@ div .card3 {
 
 /* media queries */
 
+@media only screen and (min-width:600px) and (max width: 1024) {
+    .imagenMenu {
+        width: 12vw;
+    }
+}
+
 @media screen and (max-width:600px) {    
+    .mainIndex {
+        filter: brightness(70%);
+    }
+    
     .imagenMenu {
         width: 10vw;
     }
@@ -301,6 +305,7 @@ div .card3 {
     .menuTextoInterno {
         text-align: center;
         margin-top: 1rem;
+        color: crimson;
     }
 
     .menuBoton {
