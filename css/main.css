@@ -20,7 +20,6 @@
 
 .colorTexto {
     text-decoration: none;
-    list-style: none;
     color: #88ada4;
     text-align: center;
 }
@@ -29,11 +28,13 @@ nav ul li a {
     font-size: 1rem;
     position: relative;
     overflow: hidden;
+    text-decoration: none;
 }
 
-header nav div ul li a:hover {
+a:hover {
     transform: scale(1.2);
-    color: aquamarine;
+    color: beige;
+    text-decoration: none;
 }
 
 /* Home */
@@ -62,12 +63,17 @@ header nav div ul li a:hover {
 
 .menuBoton {
     background-color: #88ada4;
+    text-decoration: none;
     color: beige;
     font-size: 1.2rem;
     border-radius: 1rem;
     grid-area: menuBoton;
     text-align: center;
+}
+
+main div a {
     text-decoration: none;
+    color: beige;
 }
 
 .menuBoton:hover {
@@ -287,9 +293,9 @@ div .card3 {
 
 /* media queries */
 
-@media only screen and (min-width:600px) and (max width: 1024) {
+@media screen (min-width:601px) {
     .imagenMenu {
-        width: 12vw;
+        width: 15vw;
     }
 }
 
