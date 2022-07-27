@@ -1,0 +1,58 @@
+@import "utilities/list";
+@import "utilities/mixin";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* nesting */
+
+header {
+    background-color: nth($list: $colores, $n:1);
+    font-weight: bold;
+    text-align: center;
+    .imagenMenu {
+        @include medidas(4vh, 8vh)
+    }
+    .colorTexto {
+        color: nth($list: $colores, $n:2);
+        text-align: center;
+    }
+    nav ul li a {
+        font-size: 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+main {
+    .mainIndex {
+        @include gridMain;
+        background-image: url(../multimedia/fondo.jpg);
+        @include medidas (100vh, 80w);
+    }
+    .menuTextoInterno {
+        color: nth($list: $colores, $n:4);
+    }
+    .menuBoton {
+        background-color: nth($list: $colores, $n:2);
+        color: nth($list: $colores, $n:3);
+        font-size: 1.2rem;
+        border-radius: 1.5rem;
+    }
+    div a {
+        color: nth($list: $colores, $n:3);
+    }
+}
+
+
+
+
+
+
+

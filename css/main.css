@@ -1,403 +1,53 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style: none; }
 
-/* menu principal */
-
-.header {
-    background-color: #fdebde;
-    font-weight: bold;
-    text-align: center;
-}
-
-.imagenMenu {
-    width: 4vw;
-    height: 8vh;
-}
-
-.colorTexto {
-    text-decoration: none;
+/* nesting */
+header {
+  background-color: #fdebde;
+  font-weight: bold;
+  text-align: center; }
+  header .imagenMenu {
+    widht: 4vh;
+    height: 8vh; }
+  header .colorTexto {
     color: #88ada4;
-    text-align: center;
-}
-
-nav ul li a {
+    text-align: center; }
+  header nav ul li a {
     font-size: 1rem;
     position: relative;
-    overflow: hidden;
-    text-decoration: none;
-}
+    overflow: hidden; }
 
-a:hover {
-    transform: scale(1.2);
-    color: beige;
-    text-decoration: none;
-}
-
-/* Home */
-
-.mainIndex {
-    background-image: url(../multimedia/fondo.jpg); 
-    height: 80vh;
-    width: 100vw;
-    text-decoration: none;
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr;
-    grid-template-areas: "menuTextoInterno menuTextoInterno menuTextoInterno"
-                        "menuBoton menuBoton menuBoton";
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-}
-
-.menuTextoInterno {
-    color: rgba(0, 0, 0, 0.77);
+main .mainIndex {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr;
+  grid-template-areas: "menuTextoInterno menuTextoInterno menuTextoInterno" "menuBoton menuBoton menuBoton";
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-image: url(../multimedia/fondo.jpg);
+  widht: 100vh;
+  height: 80w; }
+  main .mainIndex .menuTextoInterno {
     grid-area: menuTextoInterno;
-    text-align: center;
-}
-
-.menuBoton {
-    background-color: #88ada4;
-    text-decoration: none;
-    color: beige;
-    font-size: 1.2rem;
-    border-radius: 1.5rem;
+    text-align: center; }
+  main .mainIndex .menuBoton {
     grid-area: menuBoton;
-    text-align: center;
-}
+    text-align: center; }
+
+main .menuTextoInterno {
+  color: rgba(0, 0, 0, 0.77); }
+
+main .menuBoton {
+  background-color: #88ada4;
+  color: beige;
+  font-size: 1.2rem;
+  border-radius: 1.5rem; }
 
 main div a {
-    text-decoration: none;
-    color: beige;
-}
-
-.menuBoton:hover {
-    transform: scale(1.2rem);
-    box-shadow: rgba(0, 0, 0, 0.77); 2px 2px;
-} 
-
-/*lorem, titulos y footer*/ 
-
-.lorem {
-    padding: 0.2rem;
-    margin: 0.1rem;
-    background-color: rgb(232, 208, 212);
-    border-radius: 1rem;
-    overflow: hidden;
-    grid-area: lorem;
-}
-
-.titulos {
-    padding: 0.5rem;
-    margin: 0.5rem;
-    font-weight: bold;
-    font-style: italic;
-    color: crimson;
-    text-align: center;
-}
-
-footer {
-    background-color: #88ada4;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
-}
-
-.misDatos {
-    padding: 1.5rem;
-}
-
-footer div h4 {
-    color: crimson;
-    font-size: 1.3em;
-}
-
-footer div h3 {
-    font-size: 1rem;
-}
-
-footer div ul li {
-    list-style: none;
-    text-decoration: none;
-}
-
-footer div ul li a {
-    color: crimson;
-    text-decoration: none;
-}
-
-
-/* quien soy */
-
-.mainQuienSoy {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.7fr;
-    grid-template-areas: "imagenBelen imagenRecibida"
-                        "lorem lorem"
-                        "video video";
-    justify-content: space-around;
-    align-items: center;
-    justify-items: center;
-}
-
-.imagenBelen {
-    grid-area: imagenBelen;
-    text-align: center;
-}
-
-.imagenRecibida {
-    text-align: center;
-    grid-area: imagenRecibida;
-}
-
-.imagenRecibida img {    
-    width: 30vw;
-    height: 45vh;
-    margin: 0.3rem;
-}
-
-.imagenBelen img {
-    width: 30vw;
-    height: 45vh;
-    margin: 0.3rem;
-}
-
-.video {
-    grid-area: video;
-    text-align: center;
-}
-
-.video iframe {
-    width: 40vw;
-    height: 40vh;
-}
-
-/* contacto */
-
-form fieldset {
-    background-color: #fdebde;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-form fieldset legend{
-    background-color: #88ada4;
-    text-align: center;
-    font-weight: bold;
-}
-
-.input {
-    text-align: center;
-    grid-area: enviar;
-}
-
-button, input, select, textarea {
-    background-color: #88ada4;
-    font-size: 80%;
-    border-radius: 0.3rem;
-    margin: 0.3rem;
-    padding: 0.3rem;
-    font-weight: bold;
-    border-style: bold;
-}
-
-.formContacto {
-    display: flex;
-    justify-content: space-around;
-}
-
-.imagenContacto {
-    width: 30%;
-}
-
-/* mis trabajos */
-
-.cards {
-    display: flex;
-    justify-content: space-around;
-}
-
-div .card1 {
-    width: 12rem;
-}
-
-div .card2 {
-    width: 12rem;
-}
-
-div .card3 {
-    width: 12rem;
-}
-
-.btn {
-    background-color: #88ada4;
-    color: beige;
-    text-decoration: none;
-    list-style: none;
-    border-radius: 0.5rem;
-    padding: 0.2rem;
-    margin: 0.2rem;
-    box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.77);
-    justify-content: center;
-}
-
-/* servicio */
-
-.lorem1 {
-    padding: 0.2rem;
-    margin: 0.1rem;
-    background-color: rgb(232, 208, 212);
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
-.lorem2 {
-    padding: 0.2rem;
-    margin: 0.1rem;
-    background-color: rgb(232, 208, 212);
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
-.lorem3 {
-    padding: 0.2rem;
-    margin: 0.1rem;
-    background-color: rgb(232, 208, 212);
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
-.boton { 
-    background-color: #88ada4;
-    color: beige;
-    text-decoration: none;
-    list-style: none;
-    border-radius: 0.5rem;
-    padding: 0.2rem;
-    margin: 0.2rem;
-    box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.77);
-    text-align: center;
-}
-
-.textos {
-    display: flex;
-    justify-content: space-around;
-}
-
-/* media queries */
-
-@media only screen and (min-width:601px) and (max-width:1000px) {
-    .imagenMenu {
-        width: 100%;
-    }
-
-    .mainIndex {
-        filter: brightness(80%);
-    }
-
-    .menuTextoInterno {
-        color: crimson;
-    }
-
-    main div a {
-        color: rgba(0, 0, 0, 0.77);
-    }
-}
-
-@media screen and (max-width:600px) {    
-    .mainIndex {
-        filter: brightness(80%);
-    }
-
-    main div a {
-        color: rgba(0, 0, 0, 0.77);
-    }
-    
-    .imagenMenu {
-        width: 100%;
-    }
-
-    .menuTextoInterno {
-        text-align: center;
-        margin-top: 1rem;
-        color: crimson;
-    }
-
-    .menuBoton {
-        margin-bottom: 2rem;
-    }
-
-    .video {
-        width: 100vw;
-        height: 40vh;
-    }
-
-    .imagenRecibida img {    
-        width: 33vw;
-        height: 25vh;
-    }
-    
-    .imagenBelen img {
-        width: 40vw;
-        height: 25vh;
-    }
-
-    .formContacto img {
-    display: none;
-}
-
-    .textos {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "lorem1 boton"
-                            "lorem2 boton"
-                            "lorem3 boton";
-        justify-content: space-around;
-}
-
-    .lorem1 {
-        grid-area: lorem1;
-    }
-
-    .lorem2 {
-        grid-area: lorem2;
-    }
-
-    .lorem3 {
-        grid-area: lorem3;
-    }
-
-    .boton {
-        grid-area: boton;
-    }
-
-    .cards {
-        display: grid;
-        grid-template-columns: 1rem;
-        grid-template-rows: 20rem;
-        grid-template-areas: "card1 card1 card1" 
-                            "card2 card2 card2"
-                            "card3 card3 card3";
-    }
-
-    div .card1 {
-        grid-area: card1;
-    }
-
-    div .card2 {
-        grid-area: card2;
-    }
-
-    div .card3 {
-        grid-area: card3;
-    }
-
-}
+  color: beige; }

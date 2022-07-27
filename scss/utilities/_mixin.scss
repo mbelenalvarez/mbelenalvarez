@@ -1,0 +1,23 @@
+@mixin medidas($widht, $height) {
+    widht: $widht;
+    height: $height;
+}
+
+@mixin gridMain {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr;
+    grid-template-areas: "menuTextoInterno menuTextoInterno menuTextoInterno"
+                        "menuBoton menuBoton menuBoton";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    .menuTextoInterno {
+        grid-area: menuTextoInterno;
+        text-align: center;
+    }
+    .menuBoton {
+        grid-area: menuBoton;
+        text-align: center;
+    }
+}
