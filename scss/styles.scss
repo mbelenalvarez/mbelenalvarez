@@ -50,6 +50,21 @@ main {
     }
 }
 
+footer {
+    background-color: nth($list: $colores, $n:2);
+    @include flex-footer;
+    .misDatos {
+        padding: 1.5rem;
+    }
+    div h4 {
+        color: nth($list: $colores, $n:5);
+        font-size: 1.3rem;
+    }
+    div ul li a {
+        color: nth($list: $colores, $n:5);
+    }
+}
+
 
 
 
