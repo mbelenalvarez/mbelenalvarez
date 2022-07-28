@@ -8,6 +8,7 @@
   text-align: center; }
 
 /* nesting */
+/* menu principal */
 header {
   background-color: #fdebde;
   font-weight: bold; }
@@ -21,6 +22,7 @@ header {
     position: relative;
     overflow: hidden; }
 
+/* main Index */
 main .mainIndex {
   display: grid;
   grid-template-columns: 1fr;
@@ -47,6 +49,7 @@ main .menuBoton {
 main div a {
   color: beige; }
 
+/* footer */
 footer {
   background-color: #88ada4;
   display: flex;
