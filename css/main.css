@@ -50,7 +50,7 @@ main {
     color: beige;
     text-decoration: none; }
 
-/* footer */
+/* footer, lorem, titulos */
 footer {
   background-color: #88ada4;
   display: flex;
@@ -61,5 +61,22 @@ footer {
   footer div h4 {
     color: crimson;
     font-size: 1.3rem; }
+  footer div h3 {
+    font-size: 1rem; }
   footer div ul li a {
-    color: crimson; }
+    color: crimson;
+    text-decoration: none; }
+
+.lorem {
+  padding: 0.2rem;
+  margin: 0.1rem;
+  background-color: #fdebde;
+  border-radius: 1rem;
+  overflow: hidden; }
+
+.titulos {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: crimson; }
