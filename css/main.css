@@ -3,8 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  list-style: none;
   text-align: center; }
 
 /* nesting */
@@ -16,24 +14,20 @@ header {
     widht: 4vh;
     height: 8vh; }
   header .colorTexto {
-    color: #88ada4; }
+    color: #88ada4;
+    text-decoration: none; }
   header nav ul li a {
     font-size: 1rem;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    text-decoration: none; }
 
 /* main Index */
 main .mainIndex {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr;
-  grid-template-areas: "menuTextoInterno menuTextoInterno menuTextoInterno" "menuBoton menuBoton menuBoton";
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
+  text-decoration: none;
   background-image: url(../multimedia/fondo.jpg);
-  widht: 100vh;
-  height: 80w; }
+  width: 100vh;
+  height: 80vw; }
 
 main .menuTextoInterno {
   color: rgba(0, 0, 0, 0.77);
@@ -44,10 +38,12 @@ main .menuBoton {
   color: beige;
   font-size: 1.2rem;
   border-radius: 1.5rem;
-  grid-area: menuBoton; }
+  grid-area: menuBoton;
+  text-decoration: none; }
 
 main div a {
-  color: beige; }
+  color: beige;
+  text-decoration: none; }
 
 /* footer */
 footer {
