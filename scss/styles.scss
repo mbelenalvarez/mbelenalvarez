@@ -6,7 +6,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center
+    text-align: center;
+    list-style: none;
 }
 
 /* nesting */
@@ -16,7 +17,7 @@ header {
     background-color: nth($list: $colores, $n:1);
     font-weight: bold;
     .imagenMenu {
-        @include medidas(4vh, 8vh)
+        @include medidas(4vw, 8vh)
     }
     .colorTexto {
         color: nth($list: $colores, $n:2);
@@ -32,12 +33,10 @@ header {
 
 /* main Index */
 main {
-    .mainIndex {
-        text-decoration: none;
-        background-image: url(../multimedia/fondo.jpg);
-        width: 100vh;
-        height: 80vw;
-    }
+    text-decoration: none;
+    background-image: url(../multimedia/fondo.jpg);
+    @include medidas(100vw, 80vh);
+    @include gridMain;
     .menuTextoInterno {
         color: nth($list: $colores, $n:4);
         grid-area: menuTextoInterno;
