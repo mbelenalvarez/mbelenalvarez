@@ -12,14 +12,6 @@
     justify-content: center;
     align-items: center;
     justify-items: center;
-    .menuTextoInterno {
-        grid-area: menuTextoInterno;
-        text-align: center;
-    }
-    .menuBoton {
-        grid-area: menuBoton;
-        text-align: center;
-    }
 }
 
 @mixin flex-footer {
