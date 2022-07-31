@@ -97,7 +97,8 @@ footer {
   margin: 0.1rem;
   background-color: #fdebde;
   border-radius: 1rem;
-  overflow: hidden; }
+  overflow: hidden;
+  grid-area: lorem; }
 
 .titulos {
   padding: 0.5rem;

@@ -94,6 +94,7 @@ footer {
     background-color: nth($list: $colores, $n:1);
     border-radius: 1rem;
     overflow: hidden;
+    grid-area: lorem;
 }
 
 .titulos {
