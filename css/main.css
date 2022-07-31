@@ -1,7 +1,7 @@
 header a:hover, main .menuBoton:hover {
   transform: scale(1.2rem); }
 
-.cards .btn, .boton {
+.cards .btn, .textos .boton {
   background-color: #88ada4;
   color: beige;
   list-style: none;
@@ -11,7 +11,7 @@ header a:hover, main .menuBoton:hover {
   box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.77);
   justify-content: center; }
 
-.lorem1, .lorem2, .lorem3 {
+.textos .lorem1, .textos .lorem2, .textos .lorem3 {
   padding: 0.2rem;
   margin: 0.1rem;
   background-color: #e8d0d4;

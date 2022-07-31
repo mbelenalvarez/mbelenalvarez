@@ -182,25 +182,24 @@ form fieldset {
 
 /* servicio */
 
-.lorem1 {
-    @extend %textos;
-}
-
-.lorem2 {
-    @extend %textos;
-}
-
-.lorem3 {
-    @extend %textos;
-}
-
-.boton { 
-    @extend %botones;
-}
-
 .textos {
     @include flex;
+    .lorem1 {
+        @extend %textos;
+    }
+    .lorem2 {
+        @extend %textos;
+    }
+    .lorem3 {
+        @extend %textos;
+    }
+    .boton { 
+        @extend %botones;
+    }
 }
+
+
+
 
 
 
