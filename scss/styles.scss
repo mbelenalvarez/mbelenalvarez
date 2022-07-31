@@ -41,10 +41,10 @@ header {
 }
 
 /* main Index */
-main {
+.mainIndex {
     text-decoration: none;
     background-image: url(../multimedia/fondo.jpg);
-    @include medidas(100vw, 80vh);
+    @include medidas(100vw, 100vh);
     @include gridMain;
     .menuTextoInterno {
         color: nth($list: $colores, $n:4);
@@ -67,6 +67,29 @@ main {
         text-decoration: none;
     }
 }
+
+.textoMenu {
+    background-color: nth($list: $colores, $n:1);
+    @include gridTextoMenu;
+    .principal {
+        font-size: 1.2rem;
+        font-weight: $fuente;
+        font-style: italic;
+        padding: 1rem;
+        grid-area: principal;
+    }
+    .secundario {
+        font-size: 1rem;
+        padding: 1rem;
+        grid-area: secundario;
+    }
+    .terciario {
+        font-size: 1rem;
+        padding: 1rem;
+        grid-area: terciario;
+    }
+}
+
 
 /* footer, lorem, titulos */
 footer {

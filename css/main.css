@@ -1,4 +1,4 @@
-header a:hover, main .menuBoton:hover {
+header a:hover, .mainIndex .menuBoton:hover {
   transform: scale(1.2rem); }
 
 .cards .btn, .textos .boton {
@@ -47,11 +47,11 @@ header {
     text-decoration: none; }
 
 /* main Index */
-main {
+.mainIndex {
   text-decoration: none;
   background-image: url(../multimedia/fondo.jpg);
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr;
@@ -59,21 +59,45 @@ main {
   justify-content: center;
   align-items: center;
   justify-items: center; }
-  main .menuTextoInterno {
+  .mainIndex .menuTextoInterno {
     color: rgba(0, 0, 0, 0.77);
     grid-area: menuTextoInterno; }
-  main .menuBoton {
+  .mainIndex .menuBoton {
     background-color: #88ada4;
     color: beige;
     font-size: 1.2rem;
     border-radius: 1.5rem;
     grid-area: menuBoton;
     text-decoration: none; }
-    main .menuBoton:hover {
+    .mainIndex .menuBoton:hover {
       box-shadow: rgba(0, 0, 0, 0.77) 2px 2px; }
-  main div a {
+  .mainIndex div a {
     color: beige;
     text-decoration: none; }
+
+.textoMenu {
+  background-color: #fdebde;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "principal principal principal" "secundario secundario terciario";
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center; }
+  .textoMenu .principal {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 1rem;
+    grid-area: principal; }
+  .textoMenu .secundario {
+    font-size: 1rem;
+    padding: 1rem;
+    grid-area: secundario; }
+  .textoMenu .terciario {
+    font-size: 1rem;
+    padding: 1rem;
+    grid-area: terciario; }
 
 /* footer, lorem, titulos */
 footer {
