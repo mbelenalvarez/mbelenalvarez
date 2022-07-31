@@ -1,7 +1,8 @@
 @import "utilities/list";
 @import "utilities/mixin";
+@import "utilities/extend"
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -28,6 +29,13 @@ header {
         position: relative;
         overflow: hidden;
         text-decoration: none;
+    }
+    a {
+        &:hover{}
+        @extend %transformaciones;
+        color: beige;
+        text-decoration: none;
+        }
     }
 }
 
@@ -90,6 +98,8 @@ footer {
     font-style: italic;
     color: nth($list: $colores, $n:5);
 }
+
+
 
 
 
