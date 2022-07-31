@@ -1,3 +1,23 @@
+header a:hover, main .menuBoton:hover {
+  transform: scale(1.2rem); }
+
+.cards .btn, .boton {
+  background-color: #88ada4;
+  color: beige;
+  list-style: none;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.77);
+  justify-content: center; }
+
+.lorem1, .lorem2, .lorem3 {
+  padding: 0.2rem;
+  margin: 0.1rem;
+  background-color: #e8d0d4;
+  border-radius: 1rem;
+  overflow: hidden; }
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +41,9 @@ header {
     font-size: 1rem;
     position: relative;
     overflow: hidden;
+    text-decoration: none; }
+  header a:hover {
+    color: beige;
     text-decoration: none; }
 
 /* main Index */
@@ -46,6 +69,8 @@ main {
     border-radius: 1.5rem;
     grid-area: menuBoton;
     text-decoration: none; }
+    main .menuBoton:hover {
+      box-shadow: rgba(0, 0, 0, 0.77) 2px 2px; }
   main div a {
     color: beige;
     text-decoration: none; }
@@ -80,3 +105,74 @@ footer {
   font-weight: bold;
   font-style: italic;
   color: crimson; }
+
+/* quien soy */
+.mainQuienSoy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.7fr;
+  grid-template-areas: "imagenBelen imagenRecibida" "lorem lorem" "video video";
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center; }
+  .mainQuienSoy .imagenBelen {
+    grid-area: imagenBelen; }
+  .mainQuienSoy .imagenRecibida {
+    grid-area: imagenRecibida; }
+  .mainQuienSoy .imagenRecibida img {
+    width: 30vw;
+    height: 45vh;
+    margin: 0.3rem; }
+  .mainQuienSoy .imagenBelen img {
+    width: 30vw;
+    height: 45vh;
+    margin: 0.3rem; }
+  .mainQuienSoy .video {
+    grid-area: video; }
+  .mainQuienSoy .video iframe {
+    width: 40vw;
+    height: 40vh; }
+
+/* contacto */
+form fieldset {
+  background-color: #fdebde;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px; }
+  form fieldset legend {
+    background-color: #88ada4;
+    font-weight: bold; }
+  form fieldset .input {
+    grid-area: enviar; }
+  form fieldset button, form fieldset input, form fieldset select, form fieldset textarea {
+    background-color: #88ada4;
+    font-size: 80%;
+    border-radius: 0.3rem;
+    margin: 0.3rem;
+    padding: 0.3rem;
+    font-weight: bold;
+    border-style: bold; }
+  form fieldset .formContacto {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem; }
+  form fieldset .imagenContacto {
+    width: 30%; }
+
+/* mis trabajos */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem; }
+  .cards div .card1 {
+    width: 12rem; }
+  .cards div .card2 {
+    width: 12rem; }
+  .cards div .card3 {
+    width: 12rem; }
+
+/* servicio */
+.textos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem; }
