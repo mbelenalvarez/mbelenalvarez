@@ -78,10 +78,10 @@ header {
 .textoMenu {
   background-color: #fdebde;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "principal principal principal" "secundario secundario terciario";
-  justify-content: space-around;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "principal principal ." ". secundario terciario";
+  justify-content: center;
   align-items: center;
   justify-items: center; }
   .textoMenu .principal {
@@ -177,11 +177,12 @@ form fieldset {
     padding: 0.3rem;
     font-weight: bold;
     border-style: bold; }
-  form fieldset .formContacto {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1rem; }
-  form fieldset .imagenContacto {
+
+.formContacto {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem; }
+  .formContacto .imagenContacto {
     width: 30%; }
 
 /* mis trabajos */

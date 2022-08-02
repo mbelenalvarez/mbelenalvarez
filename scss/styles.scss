@@ -177,13 +177,15 @@ form fieldset {
         font-weight: $fuente;
         border-style: $fuente
     }
-    .formContacto {
-        @include flex;
-    }
+}
+
+.formContacto {
+    @include flex;
     .imagenContacto {
         width: 30%;
     }
 }
+
 
 /* mis trabajos */
 
