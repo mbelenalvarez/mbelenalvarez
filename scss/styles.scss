@@ -40,7 +40,7 @@ header {
     }
 }
 
-/* main Index */
+/* Index */
 .mainIndex {
     text-decoration: none;
     background-image: url(../multimedia/fondo.jpg);
@@ -87,6 +87,17 @@ header {
         font-size: 1rem;
         padding: 1rem;
         grid-area: terciario;
+    }
+}
+
+.service {
+    background-color: nth($list: $colores, $n:3);
+    h2 {
+    color: nth($list: $colores, $n:5);
+    text-align: start;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    font-style: italic;
     }
 }
 
@@ -191,14 +202,18 @@ form fieldset {
 
 .cards {
     @include flex;
+    margin: 1rem;
     div .card1 {
-        width: 12rem;
+        width: 10rem;
+        font-size: 1rem;
     }
     div .card2 {
-        width: 12rem;
+        width: 10rem;
+        font-size: 1rem;
     }
     div .card3 {
-        width: 12rem;
+        width: 10rem;
+        font-size: 1rem;
     }
     .btn {
         @extend %botones;
@@ -222,6 +237,13 @@ form fieldset {
         @extend %botones;
     }
 }
+
+/* media querie */
+
+@include mediaquerie1;
+@include mediaquerie2;
+
+
 
 
 

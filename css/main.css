@@ -46,7 +46,7 @@ header {
     color: beige;
     text-decoration: none; }
 
-/* main Index */
+/* Index */
 .mainIndex {
   text-decoration: none;
   background-image: url(../multimedia/fondo.jpg);
@@ -99,6 +99,15 @@ header {
     font-size: 1rem;
     padding: 1rem;
     grid-area: terciario; }
+
+.service {
+  background-color: beige; }
+  .service h2 {
+    color: crimson;
+    text-align: start;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    font-style: italic; }
 
 /* footer, lorem, titulos */
 footer {
@@ -190,16 +199,81 @@ form fieldset {
 .cards {
   display: flex;
   justify-content: space-around;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  margin: 1rem; }
   .cards div .card1 {
-    width: 12rem; }
+    width: 10rem;
+    font-size: 1rem; }
   .cards div .card2 {
-    width: 12rem; }
+    width: 10rem;
+    font-size: 1rem; }
   .cards div .card3 {
-    width: 12rem; }
+    width: 10rem;
+    font-size: 1rem; }
 
 /* servicio */
 .textos {
   display: flex;
   justify-content: space-around;
   margin-top: 1rem; }
+
+/* media querie */
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  .imagenMenu {
+    width: 100%; }
+  .mainIndex {
+    filter: brightness(80%); }
+  .menuTextoInterno {
+    color: crimson; }
+  main div a {
+    color: rgba(0, 0, 0, 0.77); } }
+
+@media screen and (max-width: 600px) {
+  .mainIndex {
+    filter: brightness(80%); }
+  main div a {
+    color: rgba(0, 0, 0, 0.77); }
+  .imagenMenu {
+    width: 100%; }
+    .imagenMenu .menuTextoInterno {
+      text-align: center;
+      margin-top: 1rem;
+      color: crimson; }
+    .imagenMenu .menuBoton {
+      margin-bottom: 2rem; }
+    .imagenMenu .video {
+      width: 100vw;
+      height: 40vh; }
+    .imagenMenu .imagenRecibida img {
+      width: 33vw;
+      height: 25vh; }
+    .imagenMenu .imagenBelen img {
+      width: 40vw;
+      height: 25vh; }
+    .imagenMenu .formContacto img {
+      display: none; }
+    .imagenMenu .textos {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "lorem1 boton" "lorem2 boton" "lorem3 boton";
+      justify-content: space-around; }
+    .imagenMenu .lorem1 {
+      grid-area: lorem1; }
+    .imagenMenu .lorem2 {
+      grid-area: lorem2; }
+    .imagenMenu .lorem3 {
+      grid-area: lorem3; }
+    .imagenMenu .boton {
+      grid-area: boton; }
+    .imagenMenu .cards {
+      display: grid;
+      grid-template-columns: 1rem;
+      grid-template-rows: 18rem;
+      grid-template-areas: "card1 card1 card1"  "card2 card2 card2" "card3 card3 card3"; }
+    .imagenMenu div .card1 {
+      grid-area: card1; }
+    .imagenMenu div .card2 {
+      grid-area: card2; }
+    .imagenMenu div .card3 {
+      grid-area: card3; } }
