@@ -240,8 +240,8 @@ form fieldset {
 
 /* media querie */
 
-@include mediaquerie1;
-@include mediaquerie2;
+@import "utilities/mediaqueries";
+
 
 
 

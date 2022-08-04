@@ -231,49 +231,49 @@ form fieldset {
 @media screen and (max-width: 600px) {
   .mainIndex {
     filter: brightness(80%); }
-  main div a {
-    color: rgba(0, 0, 0, 0.77); }
+  .mainIndex div a {
+    color: beige; }
   .imagenMenu {
-    width: 100%; }
-    .imagenMenu .menuTextoInterno {
-      text-align: center;
-      margin-top: 1rem;
-      color: crimson; }
-    .imagenMenu .menuBoton {
-      margin-bottom: 2rem; }
-    .imagenMenu .video {
-      width: 100vw;
-      height: 40vh; }
-    .imagenMenu .imagenRecibida img {
-      width: 33vw;
-      height: 25vh; }
-    .imagenMenu .imagenBelen img {
-      width: 40vw;
-      height: 25vh; }
-    .imagenMenu .formContacto img {
-      display: none; }
-    .imagenMenu .textos {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "lorem1 boton" "lorem2 boton" "lorem3 boton";
-      justify-content: space-around; }
-    .imagenMenu .lorem1 {
-      grid-area: lorem1; }
-    .imagenMenu .lorem2 {
-      grid-area: lorem2; }
-    .imagenMenu .lorem3 {
-      grid-area: lorem3; }
-    .imagenMenu .boton {
-      grid-area: boton; }
-    .imagenMenu .cards {
-      display: grid;
-      grid-template-columns: 1rem;
-      grid-template-rows: 18rem;
-      grid-template-areas: "card1 card1 card1"  "card2 card2 card2" "card3 card3 card3"; }
-    .imagenMenu div .card1 {
-      grid-area: card1; }
-    .imagenMenu div .card2 {
-      grid-area: card2; }
-    .imagenMenu div .card3 {
-      grid-area: card3; } }
+    width: 30vw; }
+  .menuTextoInterno {
+    text-align: center;
+    margin-top: 1rem;
+    color: crimson; }
+  .menuBoton {
+    margin-bottom: 2rem; }
+  .video {
+    width: 100vw;
+    height: 40vh; }
+  .imagenRecibida img {
+    width: 40vw;
+    height: 55vh; }
+  .imagenBelen img {
+    width: 40vw;
+    height: 25vh; }
+  .formContacto img {
+    display: none; }
+  .textos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "lorem1 boton" "lorem2 boton" "lorem3 boton";
+    justify-content: space-around; }
+  .lorem1 {
+    grid-area: lorem1; }
+  .lorem2 {
+    grid-area: lorem2; }
+  .lorem3 {
+    grid-area: lorem3; }
+  .boton {
+    grid-area: boton; }
+  .cards {
+    display: grid;
+    grid-template-columns: 4rem;
+    grid-template-rows: 35rem;
+    grid-template-areas: "card1 card1 card1"  "card2 card2 card2" "card3 card3 card3"; }
+  div .card1 {
+    grid-area: card1; }
+  div .card2 {
+    grid-area: card2; }
+  div .card3 {
+    grid-area: card3; } }
