@@ -1,6 +1,6 @@
 @media only screen and (min-width:601px) and (max-width:1000px) {
     .imagenMenu {
-        width: 100%;
+        width: 30vh;
     }
     .mainIndex {
         filter: brightness(80%);
@@ -11,17 +11,17 @@
     main div a {
         color: rgba(0, 0, 0, 0.77);
     }
-}
+    }
 
 @media screen and (max-width:600px) {    
     .mainIndex {
         filter: brightness(80%);
     }
-    .mainIndex div a {
+    main div a {
         color:beige;
     } 
     .imagenMenu {
-        width: 30vw;
+        width: 100%;
     }
     .menuTextoInterno {
         text-align: center;
@@ -31,6 +31,8 @@
     .menuBoton {
         margin-bottom: 2rem;
     }
+
+    main div {
     .video {
         width: 100vw;
         height: 40vh;
@@ -43,9 +45,12 @@
         width: 40vw;
         height: 25vh;
     }
+}
+
     .formContacto img {
     display: none;
     }
+    
     .textos {
         display: grid;
         grid-template-columns: 1fr;
@@ -54,19 +59,20 @@
                             "lorem2 boton"
                             "lorem3 boton";
         justify-content: space-around;
+        .lorem1 {
+            grid-area: lorem1;
+        }
+        .lorem2 {
+            grid-area: lorem2;
+        }
+        .lorem3 {
+            grid-area: lorem3;
+        }
+        .boton {
+            grid-area: boton;
+        }
     }
-    .lorem1 {
-        grid-area: lorem1;
-    }
-    .lorem2 {
-        grid-area: lorem2;
-    }
-    .lorem3 {
-        grid-area: lorem3;
-    }
-    .boton {
-        grid-area: boton;
-    }
+
     .cards {
         display: grid;
         grid-template-columns: 4rem;
@@ -74,15 +80,15 @@
         grid-template-areas: "card1 card1 card1" 
                             "card2 card2 card2"
                             "card3 card3 card3";
-    }
-    div .card1 {
+        div .card1 {
         grid-area: card1;
-    }
-    div .card2 {
+        }
+        div .card2 {
         grid-area: card2;
-    }
-    div .card3 {
+        }
+        div .card3 {
         grid-area: card3;
+        }
     }
 }
 
