@@ -215,7 +215,6 @@ form fieldset {
 
 .cards {
     @include flex;
-    margin: 1rem;
     .card1 {
         @extend %cards;
     }
