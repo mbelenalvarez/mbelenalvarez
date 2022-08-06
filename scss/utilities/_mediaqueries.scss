@@ -1,36 +1,47 @@
 @media only screen and (min-width:601px) and (max-width:1000px) {
-    .imagenMenu {
-        width: 30vh;
+    .imagenMenu img {
+        width: 60vh;
     }
     .mainIndex {
-        filter: brightness(80%);
-    }
-    .menuTextoInterno {
-        color: crimson;
-    }
-    main div a {
-        color: rgba(0, 0, 0, 0.77);
+        filter: brightness(75%);
+        .menuTextoInterno {
+            color: crimson;
+            text-shadow: 2px 2px beige;
+        }
     }
     }
 
 @media screen and (max-width:600px) {    
     .mainIndex {
-        filter: brightness(80%);
+        filter: brightness(75%);
+        .menuTextoInterno {
+            margin-top: 1rem;
+            color: crimson;
+            text-shadow: 2px 2px beige;
+        }
+        .menuBoton {
+            margin-bottom: 2rem;
+        }
     }
-    main div a {
-        color:beige;
-    } 
+    .textoMenu {
+        grid-template-columns: 0.5fr;
+        grid-template-rows: 0.5fr 1fr 0.5fr;
+        grid-template-areas: ". principal principal"
+                            ". secundario terciario";
+    }
+    .service {
+        ul li {
+            display: flex;
+            text-align: center;
+            font-size: 1rem;
+            justify-content: space-around;
+            padding: 0.1rem;
+        }
+    }
     .imagenMenu {
         width: 100%;
     }
-    .menuTextoInterno {
-        text-align: center;
-        margin-top: 1rem;
-        color: crimson;
-    }
-    .menuBoton {
-        margin-bottom: 2rem;
-    }
+
 
     main div {
     .video {
@@ -50,43 +61,23 @@
     .formContacto img {
     display: none;
     }
-    
-    .textos {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "lorem1 boton"
-                            "lorem2 boton"
-                            "lorem3 boton";
-        justify-content: space-around;
-        .lorem1 {
-            grid-area: lorem1;
-        }
-        .lorem2 {
-            grid-area: lorem2;
-        }
-        .lorem3 {
-            grid-area: lorem3;
-        }
-        .boton {
-            grid-area: boton;
-        }
-    }
+
 
     .cards {
         display: grid;
         grid-template-columns: 4rem;
-        grid-template-rows: 35rem;
-        grid-template-areas: "card1 card1 card1" 
-                            "card2 card2 card2"
-                            "card3 card3 card3";
-        div .card1 {
+        grid-template-rows: 22rem;
+        grid-template-areas: "card1 card1" 
+                            "card2 card2"
+                            "card3 card3";
+        justify-content: center;
+        .card1 {
         grid-area: card1;
         }
-        div .card2 {
+        .card2 {
         grid-area: card2;
         }
-        div .card3 {
+        .card3 {
         grid-area: card3;
         }
     }

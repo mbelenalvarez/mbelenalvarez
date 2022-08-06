@@ -99,6 +99,28 @@ header {
     font-size: 1.5rem;
     font-style: italic;
     }
+    ul li {
+        @include servicioIndex;
+        text-align: start;
+        font-size: 1.1rem;
+        font-weight: $fuente;
+        padding-left: 1rem;
+        p {
+            font-weight: normal;
+            padding-right: 1rem;
+            color: nth($list: $colores, $n:2);
+            grid-area: p;
+        }
+        .servicio-uno {
+            grid-area: s1;
+        }
+        .servicio-dos {
+            grid-area: s2;
+        }
+        .servicio-tres {
+            grid-area: s3;
+        }
+    }
 }
 
 
@@ -120,15 +142,6 @@ footer {
         color: nth($list: $colores, $n:5);
         text-decoration: none;
     }
-}
-
-.lorem {
-    padding: 0.2rem;
-    margin: 0.1rem;
-    background-color: nth($list: $colores, $n:1);
-    border-radius: 1rem;
-    overflow: hidden;
-    grid-area: lorem;
 }
 
 .titulos {
@@ -198,42 +211,21 @@ form fieldset {
 }
 
 
-/* mis trabajos */
+/* mis trabajos y servicio */
 
 .cards {
     @include flex;
     margin: 1rem;
-    div .card1 {
-        width: 10rem;
-        font-size: 1rem;
+    .card1 {
+        @extend %cards;
     }
-    div .card2 {
-        width: 10rem;
-        font-size: 1rem;
+    .card2 {
+        @extend %cards;
     }
-    div .card3 {
-        width: 10rem;
-        font-size: 1rem;
+    .card3 {
+        @extend %cards;
     }
     .btn {
-        @extend %botones;
-    }
-}
-
-/* servicio */
-
-.textos {
-    @include flex;
-    .lorem1 {
-        @extend %textos;
-    }
-    .lorem2 {
-        @extend %textos;
-    }
-    .lorem3 {
-        @extend %textos;
-    }
-    .boton { 
         @extend %botones;
     }
 }

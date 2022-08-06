@@ -1,7 +1,7 @@
 header a:hover, .mainIndex .menuBoton:hover {
   transform: scale(1.2rem); }
 
-.cards .btn, .textos .boton {
+.cards .btn {
   background-color: #88ada4;
   color: beige;
   list-style: none;
@@ -11,12 +11,9 @@ header a:hover, .mainIndex .menuBoton:hover {
   box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.77);
   justify-content: center; }
 
-.textos .lorem1, .textos .lorem2, .textos .lorem3 {
-  padding: 0.2rem;
-  margin: 0.1rem;
-  background-color: #e8d0d4;
-  border-radius: 1rem;
-  overflow: hidden; }
+.cards .card1, .cards .card2, .cards .card3 {
+  width: 15rem;
+  font-size: 1rem; }
 
 * {
   margin: 0;
@@ -108,12 +105,33 @@ header {
     padding-left: 2rem;
     font-size: 1.5rem;
     font-style: italic; }
+  .service ul li {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr;
+    grid-template-areas: "s1 p" "s2 p" "s3 p";
+    padding: 0.2rem;
+    text-align: start;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-left: 1rem; }
+    .service ul li p {
+      font-weight: normal;
+      padding-right: 1rem;
+      color: #88ada4;
+      grid-area: p; }
+    .service ul li .servicio-uno {
+      grid-area: s1; }
+    .service ul li .servicio-dos {
+      grid-area: s2; }
+    .service ul li .servicio-tres {
+      grid-area: s3; }
 
 /* footer, lorem, titulos */
 footer {
   background-color: #88ada4;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 1rem; }
   footer .misDatos {
     padding: 1.5rem; }
@@ -125,14 +143,6 @@ footer {
   footer div ul li a {
     color: crimson;
     text-decoration: none; }
-
-.lorem {
-  padding: 0.2rem;
-  margin: 0.1rem;
-  background-color: #fdebde;
-  border-radius: 1rem;
-  overflow: hidden;
-  grid-area: lorem; }
 
 .titulos {
   padding: 0.5rem;
@@ -190,57 +200,49 @@ form fieldset {
 
 .formContacto {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 1rem; }
   .formContacto .imagenContacto {
     width: 30%; }
 
-/* mis trabajos */
+/* mis trabajos y servicio */
 .cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 1rem;
   margin: 1rem; }
-  .cards div .card1 {
-    width: 10rem;
-    font-size: 1rem; }
-  .cards div .card2 {
-    width: 10rem;
-    font-size: 1rem; }
-  .cards div .card3 {
-    width: 10rem;
-    font-size: 1rem; }
-
-/* servicio */
-.textos {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 1rem; }
 
 /* media querie */
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
-  .imagenMenu {
-    width: 30vh; }
+  .imagenMenu img {
+    width: 60vh; }
   .mainIndex {
-    filter: brightness(80%); }
-  .menuTextoInterno {
-    color: crimson; }
-  main div a {
-    color: rgba(0, 0, 0, 0.77); } }
+    filter: brightness(75%); }
+    .mainIndex .menuTextoInterno {
+      color: crimson;
+      text-shadow: 2px 2px beige; } }
 
 @media screen and (max-width: 600px) {
   .mainIndex {
-    filter: brightness(80%); }
-  main div a {
-    color: beige; }
+    filter: brightness(75%); }
+    .mainIndex .menuTextoInterno {
+      margin-top: 1rem;
+      color: crimson;
+      text-shadow: 2px 2px beige; }
+    .mainIndex .menuBoton {
+      margin-bottom: 2rem; }
+  .textoMenu {
+    grid-template-columns: 0.5fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-areas: ". principal principal" ". secundario terciario"; }
+  .service ul li {
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+    justify-content: space-around;
+    padding: 0.1rem; }
   .imagenMenu {
     width: 100%; }
-  .menuTextoInterno {
-    text-align: center;
-    margin-top: 1rem;
-    color: crimson; }
-  .menuBoton {
-    margin-bottom: 2rem; }
   main div .video {
     width: 100vw;
     height: 40vh; }
@@ -252,28 +254,15 @@ form fieldset {
     height: 25vh; }
   .formContacto img {
     display: none; }
-  .textos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "lorem1 boton" "lorem2 boton" "lorem3 boton";
-    justify-content: space-around; }
-    .textos .lorem1 {
-      grid-area: lorem1; }
-    .textos .lorem2 {
-      grid-area: lorem2; }
-    .textos .lorem3 {
-      grid-area: lorem3; }
-    .textos .boton {
-      grid-area: boton; }
   .cards {
     display: grid;
     grid-template-columns: 4rem;
-    grid-template-rows: 35rem;
-    grid-template-areas: "card1 card1 card1"  "card2 card2 card2" "card3 card3 card3"; }
-    .cards div .card1 {
+    grid-template-rows: 22rem;
+    grid-template-areas: "card1 card1"  "card2 card2" "card3 card3";
+    justify-content: center; }
+    .cards .card1 {
       grid-area: card1; }
-    .cards div .card2 {
+    .cards .card2 {
       grid-area: card2; }
-    .cards div .card3 {
+    .cards .card3 {
       grid-area: card3; } }

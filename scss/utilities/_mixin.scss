@@ -16,7 +16,7 @@
 
 @mixin flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 1rem;
 }
 
@@ -44,4 +44,12 @@
     padding: 0.2rem;
 }
 
-
+@mixin servicioIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr;
+    grid-template-areas: "s1 p"
+                        "s2 p"
+                        "s3 p";
+    padding: 0.2rem;
+}
