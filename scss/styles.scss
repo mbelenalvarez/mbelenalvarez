@@ -123,11 +123,11 @@ header {
     }
 }
 
-
 /* footer titulos */
 footer {
     background-color: nth($list: $colores, $n:2);
     @include flex;
+    margin-top: 0.5rem;
     .misDatos {
         padding: 1.5rem;
     }
@@ -156,11 +156,11 @@ footer {
 
 .mainQuienSoy {
     .imagenBelen img {
-        @include medidas(20vw, 30vh);
+        @include medidas(30%, 30%);
         margin: 0.3rem;
     }
     .video iframe {
-        @include medidas(30vw, 30vh);
+        @include medidas(30%, 30%);
     }
     .textoQuien {
         padding: 1rem;

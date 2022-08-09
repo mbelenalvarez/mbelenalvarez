@@ -131,7 +131,8 @@ header {
 footer {
   background-color: #88ada4;
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  margin-top: 0.5rem; }
   footer .misDatos {
     padding: 1.5rem; }
   footer div h4 {
@@ -152,13 +153,13 @@ footer {
 
 /* quien soy */
 .mainQuienSoy .imagenBelen img {
-  width: 20vw;
-  height: 30vh;
+  width: 30%;
+  height: 30%;
   margin: 0.3rem; }
 
 .mainQuienSoy .video iframe {
-  width: 30vw;
-  height: 30vh; }
+  width: 30%;
+  height: 30%; }
 
 .mainQuienSoy .textoQuien {
   padding: 1rem;
@@ -216,10 +217,7 @@ form fieldset {
     filter: brightness(75%); }
     .mainIndex .menuTextoInterno {
       color: crimson;
-      text-shadow: 2px 2px beige; }
-  .mainQuienSoy .imagenBelen img {
-    width: 20vw;
-    height: 20vh; } }
+      text-shadow: 2px 2px beige; } }
 
 @media screen and (max-width: 600px) {
   .mainIndex {
@@ -243,13 +241,18 @@ form fieldset {
   header .imagenMenu {
     height: 30%; }
   .mainQuienSoy .video {
-    width: 100vw;
-    height: 40vh; }
+    width: 100%;
+    height: 100%; }
   .mainQuienSoy .imagenBelen img {
-    width: 35vw;
-    height: 20vh; }
+    width: 40%;
+    height: 40%; }
   .mainQuienSoy .textoQuien {
-    display: block; }
+    display: block;
+    border-radius: 8px; }
+    .mainQuienSoy .textoQuien h2 {
+      font-size: 30px; }
+    .mainQuienSoy .textoQuien p {
+      font-size: 15px; }
   .formContacto img {
     display: none; }
   .cards {
