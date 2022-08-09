@@ -127,12 +127,11 @@ header {
     .service ul li .servicio-tres {
       grid-area: s3; }
 
-/* footer, lorem, titulos */
+/* footer titulos */
 footer {
   background-color: #88ada4;
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 1rem; }
+  justify-content: space-evenly; }
   footer .misDatos {
     padding: 1.5rem; }
   footer div h4 {
@@ -152,31 +151,20 @@ footer {
   color: crimson; }
 
 /* quien soy */
-.mainQuienSoy {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 0.7fr;
-  grid-template-areas: "imagenBelen imagenRecibida" "lorem lorem" "video video";
-  justify-content: space-around;
-  align-items: center;
-  justify-items: center; }
-  .mainQuienSoy .imagenBelen {
-    grid-area: imagenBelen; }
-  .mainQuienSoy .imagenRecibida {
-    grid-area: imagenRecibida; }
-  .mainQuienSoy .imagenRecibida img {
-    width: 30vw;
-    height: 45vh;
-    margin: 0.3rem; }
-  .mainQuienSoy .imagenBelen img {
-    width: 30vw;
-    height: 45vh;
-    margin: 0.3rem; }
-  .mainQuienSoy .video {
-    grid-area: video; }
-  .mainQuienSoy .video iframe {
-    width: 40vw;
-    height: 40vh; }
+.mainQuienSoy .imagenBelen img {
+  width: 20vw;
+  height: 30vh;
+  margin: 0.3rem; }
+
+.mainQuienSoy .video iframe {
+  width: 30vw;
+  height: 30vh; }
+
+.mainQuienSoy .textoQuien {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: #fdebde; }
 
 /* contacto */
 form fieldset {
@@ -200,21 +188,19 @@ form fieldset {
 
 .formContacto {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 1rem; }
+  justify-content: space-evenly; }
   .formContacto .imagenContacto {
     width: 30%; }
 
 /* mis trabajos y servicio */
 .cards {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 1rem; }
+  justify-content: space-evenly; }
 
 /* media querie */
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
-  .imagenMenu img {
-    width: 60vh; }
+  header .imagenMenu {
+    height: 8vh; }
   .mainIndex {
     filter: brightness(75%); }
     .mainIndex .menuTextoInterno {
@@ -240,17 +226,15 @@ form fieldset {
     font-size: 1rem;
     justify-content: space-around;
     padding: 0.1rem; }
-  .imagenMenu {
-    width: 100%; }
-  main div .video {
+  header .imagenMenu {
+    height: 6vh;
+    width: 8vw; }
+  .mainQuienSoy .video {
     width: 100vw;
     height: 40vh; }
-  main div .imagenRecibida img {
-    width: 40vw;
-    height: 55vh; }
-  main div .imagenBelen img {
-    width: 40vw;
-    height: 25vh; }
+  .mainQuienSoy .imagenBelen img {
+    width: 35vw;
+    height: 20vh; }
   .formContacto img {
     display: none; }
   .cards {

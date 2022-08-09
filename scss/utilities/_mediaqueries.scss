@@ -1,6 +1,6 @@
 @media only screen and (min-width:601px) and (max-width:1000px) {
-    .imagenMenu img {
-        width: 60vh;
+    header .imagenMenu {
+        height: 8vh;
     }
     .mainIndex {
         filter: brightness(75%);
@@ -38,24 +38,20 @@
             padding: 0.1rem;
         }
     }
-    .imagenMenu {
-        width: 100%;
+    header .imagenMenu {
+        height: 6vh;
+        width: 8vw;
     }
 
-
-    main div {
-    .video {
-        width: 100vw;
-        height: 40vh;
-    }
-    .imagenRecibida img {    
-        width: 40vw;
-        height: 55vh;
-    }
-    .imagenBelen img {
-        width: 40vw;
-        height: 25vh;
-    }
+    .mainQuienSoy {
+        .video {
+            width: 100vw;
+            height: 40vh;
+        }
+        .imagenBelen img {
+            width: 35vw;
+            height: 20vh;
+        }
 }
 
     .formContacto img {

@@ -124,7 +124,7 @@ header {
 }
 
 
-/* footer, lorem, titulos */
+/* footer titulos */
 footer {
     background-color: nth($list: $colores, $n:2);
     @include flex;
@@ -155,26 +155,18 @@ footer {
 /* quien soy */
 
 .mainQuienSoy {
-    @include gridQuien;
-    .imagenBelen {
-        grid-area: imagenBelen;
-    }
-    .imagenRecibida {
-        grid-area: imagenRecibida;
-    }
-    .imagenRecibida img {    
-        @include medidas(30vw, 45vh);
-        margin: 0.3rem;
-    }
     .imagenBelen img {
-        @include medidas(30vw, 45vh);
+        @include medidas(20vw, 30vh);
         margin: 0.3rem;
-    }
-    .video {
-        grid-area: video;
     }
     .video iframe {
-        @include medidas(40vw, 40vh);
+        @include medidas(30vw, 30vh);
+    }
+    .textoQuien {
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 10px;
+        background-color: nth($list: $colores, $n:1);
     }
 }
 

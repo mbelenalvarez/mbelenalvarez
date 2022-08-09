@@ -17,19 +17,6 @@
 @mixin flex {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 1rem;
-}
-
-@mixin gridQuien {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.7fr;
-    grid-template-areas: "imagenBelen imagenRecibida"
-                        "lorem lorem"
-                        "video video";
-    justify-content: space-around;
-    align-items: center;
-    justify-items: center;
 }
 
 @mixin gridTextoMenu {
