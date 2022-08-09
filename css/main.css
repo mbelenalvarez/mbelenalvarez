@@ -29,8 +29,8 @@ header {
   background-color: #fdebde;
   font-weight: bold; }
   header .imagenMenu {
-    width: 4vw;
-    height: 8vh; }
+    width: 20%;
+    height: 40%; }
   header .colorTexto {
     color: #88ada4;
     text-decoration: none; }
@@ -164,7 +164,18 @@ footer {
   padding: 1rem;
   margin: 1rem;
   border-radius: 10px;
-  background-color: #fdebde; }
+  background-color: #fdebde;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem; }
+  .mainQuienSoy .textoQuien h2 {
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    margin-inline-start: 0.8rem; }
+  .mainQuienSoy .textoQuien p {
+    font-size: 15px;
+    margin-top: 1rem; }
 
 /* contacto */
 form fieldset {
@@ -200,12 +211,15 @@ form fieldset {
 /* media querie */
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
   header .imagenMenu {
-    height: 8vh; }
+    height: 30%; }
   .mainIndex {
     filter: brightness(75%); }
     .mainIndex .menuTextoInterno {
       color: crimson;
-      text-shadow: 2px 2px beige; } }
+      text-shadow: 2px 2px beige; }
+  .mainQuienSoy .imagenBelen img {
+    width: 20vw;
+    height: 20vh; } }
 
 @media screen and (max-width: 600px) {
   .mainIndex {
@@ -227,14 +241,15 @@ form fieldset {
     justify-content: space-around;
     padding: 0.1rem; }
   header .imagenMenu {
-    height: 6vh;
-    width: 8vw; }
+    height: 30%; }
   .mainQuienSoy .video {
     width: 100vw;
     height: 40vh; }
   .mainQuienSoy .imagenBelen img {
     width: 35vw;
     height: 20vh; }
+  .mainQuienSoy .textoQuien {
+    display: block; }
   .formContacto img {
     display: none; }
   .cards {
