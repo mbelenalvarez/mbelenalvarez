@@ -232,13 +232,16 @@ form fieldset {
   .textoMenu {
     grid-template-columns: 0.5fr;
     grid-template-rows: 0.5fr 1fr 0.5fr;
-    grid-template-areas: ". principal principal" ". secundario terciario"; }
-  .service ul li {
-    display: flex;
-    text-align: center;
-    font-size: 1rem;
-    justify-content: space-around;
-    padding: 0.1rem; }
+    grid-template-areas: ". principal principal" ". secundario terciario";
+    font-size: 0.7rem; }
+  .service {
+    font-size: 1.2rem; }
+    .service ul li {
+      display: flex;
+      text-align: center;
+      font-size: 1rem;
+      justify-content: space-around;
+      padding: 0.1rem; }
   header .imagenMenu {
     height: 30%; }
   .mainQuienSoy .video {

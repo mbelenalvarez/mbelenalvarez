@@ -28,8 +28,10 @@
         grid-template-rows: 0.5fr 1fr 0.5fr;
         grid-template-areas: ". principal principal"
                             ". secundario terciario";
+        font-size: 0.7rem;
     }
     .service {
+        font-size: 1.2rem;
         ul li {
             display: flex;
             text-align: center;
