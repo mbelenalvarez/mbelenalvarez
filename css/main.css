@@ -29,8 +29,9 @@ header {
   background-color: #fdebde;
   font-weight: bold; }
   header .imagenMenu {
-    width: 20%;
-    height: 40%; }
+    width: 5rem;
+    height: 3rem;
+    padding-left: 1.8rem; }
   header .colorTexto {
     color: #88ada4;
     text-decoration: none; }
