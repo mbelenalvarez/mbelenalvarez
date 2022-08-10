@@ -161,7 +161,7 @@ footer {
         margin: 0.3rem;
     }
     .video iframe {
-        @include medidas(30%, 30%);
+        @include medidas(25rem, 20rem);
     }
     .textoQuien {
         padding: 1rem;

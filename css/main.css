@@ -159,8 +159,8 @@ footer {
   margin: 0.3rem; }
 
 .mainQuienSoy .video iframe {
-  width: 30%;
-  height: 30%; }
+  width: 25rem;
+  height: 20rem; }
 
 .mainQuienSoy .textoQuien {
   padding: 1rem;
@@ -244,9 +244,9 @@ form fieldset {
       padding: 0.1rem; }
   header .imagenMenu {
     height: 30%; }
-  .mainQuienSoy .video {
-    width: 100%;
-    height: 100%; }
+  .mainQuienSoy .video iframe {
+    width: 20rem;
+    height: 15rem; }
   .mainQuienSoy .imagenBelen img {
     width: 40%;
     height: 40%; }
