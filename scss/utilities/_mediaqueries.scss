@@ -70,13 +70,35 @@
     }
 
 
-    .cards {
+    .cardServicio {
         display: grid;
         grid-template-columns: 4rem;
         grid-template-rows: 22rem;
+        grid-template-areas: "cardS1 cardS1" 
+                            "cardS2 cardS2"
+                            "cardS3 cardS3";
+        justify-content: center;
+        .cardS1 {
+        grid-area: cardS1;
+        }
+        .cardS2 {
+        grid-area: cardS2;
+        }
+        .cardS3 {
+        grid-area: cardS3;
+        }
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 9fr;
+        grid-template-rows: 26fr;
         grid-template-areas: "card1 card1" 
                             "card2 card2"
-                            "card3 card3";
+                            "card3 card3"
+                            "card4 card4"
+                            "card5 card5"
+                            "card6 card6";
         justify-content: center;
         .card1 {
         grid-area: card1;
@@ -86,6 +108,15 @@
         }
         .card3 {
         grid-area: card3;
+        }
+        .card4 {
+        grid-area: card4;
+        }
+        .card5 {
+        grid-area: card5;
+        }
+        .card6 {
+        grid-area: card6;
         }
     }
 }

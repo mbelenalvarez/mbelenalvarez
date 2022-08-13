@@ -7,7 +7,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     list-style: none;
 }
@@ -216,17 +215,50 @@ form fieldset {
 }
 
 
-/* mis trabajos y servicio */
+/* mis trabajos */
 
 .cards {
-    @include flex;
+    @include gridCards;
     .card1 {
         @extend %cards;
+        grid-area: card1;
     }
     .card2 {
         @extend %cards;
+        grid-area: card2;
     }
     .card3 {
+        @extend %cards;
+        grid-area: card3;
+    }
+    .card4 {
+        @extend %cards;
+        grid-area: card4;
+    }
+    .card5 {
+        @extend %cards;
+        grid-area: card5;
+    }
+    .card6 {
+        @extend %cards;
+        grid-area: card6;
+    }
+    .btn {
+        @extend %botones;
+    }
+}
+
+/* Servicios */
+
+.cardServicio {
+    @include flex;
+    .cardS1 {
+        @extend %cards;
+    }
+    .cardS2 {
+        @extend %cards;
+    }
+    .cardS3 {
         @extend %cards;
     }
     .btn {

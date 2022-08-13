@@ -1,7 +1,7 @@
 header a:hover, .mainIndex .menuBoton:hover {
   transform: scale(1.2rem); }
 
-.cards .btn {
+.cards .btn, .cardServicio .btn {
   background-color: #88ada4;
   color: beige;
   list-style: none;
@@ -11,7 +11,7 @@ header a:hover, .mainIndex .menuBoton:hover {
   box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.77);
   justify-content: center; }
 
-.cards .card1, .cards .card2, .cards .card3 {
+.cards .card1, .cards .card2, .cards .card3, .cards .card4, .cards .card5, .cards .card6, .cardServicio .cardS1, .cardServicio .cardS2, .cardServicio .cardS3 {
   width: 15rem;
   font-size: 1rem; }
 
@@ -19,7 +19,6 @@ header a:hover, .mainIndex .menuBoton:hover {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   list-style: none; }
 
@@ -205,8 +204,30 @@ form fieldset {
   .formContacto .imagenContacto {
     width: 30%; }
 
-/* mis trabajos y servicio */
+/* mis trabajos */
 .cards {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1.5fr;
+  grid-template-areas: "card1 card2 card3" "card4 card5 card6";
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center; }
+  .cards .card1 {
+    grid-area: card1; }
+  .cards .card2 {
+    grid-area: card2; }
+  .cards .card3 {
+    grid-area: card3; }
+  .cards .card4 {
+    grid-area: card4; }
+  .cards .card5 {
+    grid-area: card5; }
+  .cards .card6 {
+    grid-area: card6; }
+
+/* Servicios */
+.cardServicio {
   display: flex;
   justify-content: space-evenly; }
 
@@ -259,15 +280,33 @@ form fieldset {
       font-size: 15px; }
   .formContacto img {
     display: none; }
-  .cards {
+  .cardServicio {
     display: grid;
     grid-template-columns: 4rem;
     grid-template-rows: 22rem;
-    grid-template-areas: "card1 card1"  "card2 card2" "card3 card3";
+    grid-template-areas: "cardS1 cardS1"  "cardS2 cardS2" "cardS3 cardS3";
+    justify-content: center; }
+    .cardServicio .cardS1 {
+      grid-area: cardS1; }
+    .cardServicio .cardS2 {
+      grid-area: cardS2; }
+    .cardServicio .cardS3 {
+      grid-area: cardS3; }
+  .cards {
+    display: grid;
+    grid-template-columns: 9fr;
+    grid-template-rows: 26fr;
+    grid-template-areas: "card1 card1"  "card2 card2" "card3 card3" "card4 card4" "card5 card5" "card6 card6";
     justify-content: center; }
     .cards .card1 {
       grid-area: card1; }
     .cards .card2 {
       grid-area: card2; }
     .cards .card3 {
-      grid-area: card3; } }
+      grid-area: card3; }
+    .cards .card4 {
+      grid-area: card4; }
+    .cards .card5 {
+      grid-area: card5; }
+    .cards .card6 {
+      grid-area: card6; } }
