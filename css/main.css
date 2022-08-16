@@ -43,6 +43,30 @@ header a:hover, .mainIndex .menuBoton:hover {
     -webkit-transform: none;
     transform: none; } }
 
+.menuTextoInterno {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -242,17 +266,23 @@ form fieldset {
   align-items: center;
   justify-items: center; }
   .cards .card1 {
-    grid-area: card1; }
+    grid-area: card1;
+    padding: 1rem; }
   .cards .card2 {
-    grid-area: card2; }
+    grid-area: card2;
+    padding: 1rem; }
   .cards .card3 {
-    grid-area: card3; }
+    grid-area: card3;
+    padding: 1rem; }
   .cards .card4 {
-    grid-area: card4; }
+    grid-area: card4;
+    padding: 1rem; }
   .cards .card5 {
-    grid-area: card5; }
+    grid-area: card5;
+    padding: 1rem; }
   .cards .card6 {
-    grid-area: card6; }
+    grid-area: card6;
+    padding: 1rem; }
 
 /* Servicios */
 .cardServicio {

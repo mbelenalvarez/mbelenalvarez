@@ -27,7 +27,7 @@ header {
         text-decoration: none;
     }
     nav ul li a {
-        font-size: 1rem;
+        font-size: $medida;
         position: relative;
         overflow: hidden;
         text-decoration: none;
@@ -76,17 +76,17 @@ header {
         font-size: 1.2rem;
         font-weight: $fuente;
         font-style: italic;
-        padding: 1rem;
+        padding: $medida;
         grid-area: principal;
     }
     .secundario {
-        font-size: 1rem;
-        padding: 1rem;
+        font-size: $medida;
+        padding: $medida;
         grid-area: secundario;
     }
     .terciario {
-        font-size: 1rem;
-        padding: 1rem;
+        font-size: $medida;
+        padding: $medida;
         grid-area: terciario;
     }
 }
@@ -96,7 +96,7 @@ header {
     h2 {
     color: nth($list: $colores, $n:5);
     text-align: start;
-    padding-left: 2rem;
+    padding-left: $medida*2;
     font-size: 1.5rem;
     font-style: italic;
     }
@@ -105,10 +105,10 @@ header {
         text-align: start;
         font-size: 1.1rem;
         font-weight: $fuente;
-        padding-left: 1rem;
+        padding-left: $medida;
         p {
             font-weight: normal;
-            padding-right: 1rem;
+            padding-right: $medida;
             color: nth($list: $colores, $n:2);
             grid-area: p;
         }
@@ -137,7 +137,7 @@ footer {
         font-size: 1.3rem;
     }
     div h3 {
-        font-size: 1rem;
+        font-size: $medida;
     }
     div ul li a {
         color: nth($list: $colores, $n:5);
@@ -164,12 +164,12 @@ footer {
         @include medidas(25rem, 20rem);
     }
     .textoQuien {
-        padding: 1rem;
-        margin: 1rem;
+        padding: $medida;
+        margin: $medida;
         border-radius: 10px;
         background-color: nth($list: $colores, $n:1);
         @include flex;
-        gap: 2rem;
+        gap: $medida*2;
         h2 {
             font-size: 50px;
             font-weight: $fuente;
@@ -178,7 +178,7 @@ footer {
         }
         p {
             font-size: 15px;
-            margin-top: 1rem;
+            margin-top: $medida;
         }
     }
 }
@@ -223,26 +223,32 @@ form fieldset {
     .card1 {
         @extend %cards;
         grid-area: card1;
+        padding: $medida;
     }
     .card2 {
         @extend %cards;
         grid-area: card2;
+        padding: $medida;
     }
     .card3 {
         @extend %cards;
         grid-area: card3;
+        padding: $medida;
     }
     .card4 {
         @extend %cards;
         grid-area: card4;
+        padding: $medida;
     }
     .card5 {
         @extend %cards;
         grid-area: card5;
+        padding: $medida;
     }
     .card6 {
         @extend %cards;
         grid-area: card6;
+        padding: $medida;
     }
     .btn {
         @extend %botones;
