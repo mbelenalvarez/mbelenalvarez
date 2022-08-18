@@ -156,12 +156,18 @@ footer {
 /* quien soy */
 
 .mainQuienSoy {
+    .carousel-item {
+        width: 40%;
+    }
+    .videoImagen {
+        @include flex;
+    }
     .imagenBelen img {
-        @include medidas(30%, 30%);
+        @include medidas(30rem, 20rem);
         margin: 0.3rem;
     }
     .video iframe {
-        @include medidas(25rem, 20rem);
+        @include medidas(30rem, 20rem);
     }
     .textoQuien {
         padding: $medida;
@@ -261,12 +267,15 @@ form fieldset {
     @include flex;
     .cardS1 {
         @extend %cards;
+        padding: $medida;
     }
     .cardS2 {
         @extend %cards;
+        padding: $medida;
     }
     .cardS3 {
         @extend %cards;
+        padding: $medida;
     }
     .btn {
         @extend %botones;

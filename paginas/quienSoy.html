@@ -57,8 +57,29 @@
 
 <!-- Contenido main -->
 <main class="mainQuienSoy">
-  <div class="imagenBelen">
-    <img src="../multimedia/belen.jpg" alt="Belen Alvarez">
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="../multimedia/CursoDiseño1.png" alt="Certificado Diseño UX/UI">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../multimedia/CursoDiseño2.png" alt="Certificado Diseño UX/UI Avanzado">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../multimedia/CursoPs.png" alt="Certificado Photoshop e Illustrator">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../multimedia/CursoWriter.png" alt="Certificado UX Writer">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"> Atrás </span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"> Siguiente </span>
+    </button>
   </div>
 
   <div class="textoQuien">
@@ -67,8 +88,13 @@
   </p>
   </div>
 
-  <div class="video">
-    <iframe width="400" height="250" src="https://www.youtube.com/embed/YeRcO3ELr9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="videoImagen">
+    <div class="imagenBelen">
+      <img src="../multimedia/belen.jpg" alt="Belen Alvarez">
+    </div>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/YeRcO3ELr9A" title="Presentación Lic en Criminalistica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </div>
 </main>
 

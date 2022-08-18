@@ -204,13 +204,20 @@ footer {
   color: crimson; }
 
 /* quien soy */
+.mainQuienSoy .carousel-item {
+  width: 40%; }
+
+.mainQuienSoy .videoImagen {
+  display: flex;
+  justify-content: space-evenly; }
+
 .mainQuienSoy .imagenBelen img {
-  width: 30%;
-  height: 30%;
+  width: 30rem;
+  height: 20rem;
   margin: 0.3rem; }
 
 .mainQuienSoy .video iframe {
-  width: 25rem;
+  width: 30rem;
   height: 20rem; }
 
 .mainQuienSoy .textoQuien {
@@ -288,6 +295,12 @@ form fieldset {
 .cardServicio {
   display: flex;
   justify-content: space-evenly; }
+  .cardServicio .cardS1 {
+    padding: 1rem; }
+  .cardServicio .cardS2 {
+    padding: 1rem; }
+  .cardServicio .cardS3 {
+    padding: 1rem; }
 
 /* media querie */
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
@@ -297,7 +310,13 @@ form fieldset {
     filter: brightness(75%); }
     .mainIndex .menuTextoInterno {
       color: crimson;
-      text-shadow: 2px 2px beige; } }
+      text-shadow: 2px 2px beige; }
+  .mainQuienSoy .video iframe {
+    width: 15rem;
+    height: 10rem; }
+  .mainQuienSoy .imagenBelen img {
+    width: 15rem;
+    height: 10rem; } }
 
 @media screen and (max-width: 600px) {
   .mainIndex {
@@ -323,12 +342,14 @@ form fieldset {
       padding: 0.1rem; }
   header .imagenMenu {
     height: 30%; }
+  .mainQuienSoy .videoImagen {
+    display: block; }
   .mainQuienSoy .video iframe {
     width: 20rem;
     height: 15rem; }
   .mainQuienSoy .imagenBelen img {
-    width: 40%;
-    height: 40%; }
+    width: 20rem;
+    height: 15rem; }
   .mainQuienSoy .textoQuien {
     display: block;
     border-radius: 8px; }

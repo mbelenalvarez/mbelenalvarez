@@ -9,6 +9,16 @@
             text-shadow: 2px 2px beige;
         }
     }
+    .mainQuienSoy {
+        .video iframe {
+            width: 15rem;
+            height: 10rem;
+        }
+        .imagenBelen img {
+            width: 15rem;
+            height: 10rem;
+        }
+    }
 }
 
 @media screen and (max-width:600px) {    
@@ -45,13 +55,16 @@
     }
 
     .mainQuienSoy {
+        .videoImagen {
+            display: block;
+        }
         .video iframe {
             width: 20rem;
             height: 15rem;
         }
         .imagenBelen img {
-            width: 40%;
-            height: 40%;
+            width: 20rem;
+            height: 15rem;
         }
         .textoQuien {
             display: block;
