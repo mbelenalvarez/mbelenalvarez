@@ -204,8 +204,20 @@ footer {
   color: crimson; }
 
 /* quien soy */
-.mainQuienSoy .carousel-item {
-  width: 40%; }
+.mainQuienSoy .slider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mainQuienSoy .contentSlider {
+  width: 600px; }
+
+.mainQuienSoy .button.carousel-control-prev {
+  right: 2rem; }
+
+.mainQuienSoy .button.carousel-control-next {
+  left: 25rem; }
 
 .mainQuienSoy .videoImagen {
   display: flex;
@@ -388,4 +400,6 @@ form fieldset {
     .cards .card5 {
       grid-area: card5; }
     .cards .card6 {
-      grid-area: card6; } }
+      grid-area: card6; }
+  .menuFooter {
+    padding-left: 2rem; } }

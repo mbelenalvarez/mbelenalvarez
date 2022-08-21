@@ -156,8 +156,20 @@ footer {
 /* quien soy */
 
 .mainQuienSoy {
-    .carousel-item {
-        width: 40%;
+    .slider{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contentSlider{
+        width: 600px;
+    }
+    .button.carousel-control-prev{
+        right: 2rem;
+    }
+    .button.carousel-control-next{
+        left: 25rem;
     }
     .videoImagen {
         @include flex;
