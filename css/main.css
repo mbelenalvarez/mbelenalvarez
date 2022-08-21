@@ -369,6 +369,8 @@ form fieldset {
       font-size: 30px; }
     .mainQuienSoy .textoQuien p {
       font-size: 15px; }
+  .mainQuienSoy .contentSlider {
+    width: 500px; }
   .formContacto img {
     display: none; }
   .cardServicio {

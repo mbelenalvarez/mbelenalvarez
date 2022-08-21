@@ -166,10 +166,10 @@ footer {
         width: 600px;
     }
     .button.carousel-control-prev{
-        right: 2rem;
+        right: $medida*2;
     }
     .button.carousel-control-next{
-        left: 25rem;
+        left: $medida*25;
     }
     .videoImagen {
         @include flex;
