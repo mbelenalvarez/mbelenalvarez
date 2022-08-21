@@ -370,9 +370,9 @@ form fieldset {
     .mainQuienSoy .textoQuien p {
       font-size: 15px; }
   .mainQuienSoy .slider {
-    width: 85%;
-    display: block;
-    padding: 1rem; }
+    justify-content: right;
+    align-items: right;
+    padding: 0.2rem; }
   .mainQuienSoy .contentSlider {
     width: 500px; }
   .formContacto img {
