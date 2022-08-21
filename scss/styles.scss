@@ -157,13 +157,14 @@ footer {
 
 .mainQuienSoy {
     .slider{
-        width: 100%;
+        width: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-left: $medida*42;
     }
     .contentSlider{
-        width: 600px;
+        width: 500px;
     }
     .button.carousel-control-prev{
         right: $medida*2;

@@ -205,13 +205,14 @@ footer {
 
 /* quien soy */
 .mainQuienSoy .slider {
-  width: 100%;
+  width: 200px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding-left: 42rem; }
 
 .mainQuienSoy .contentSlider {
-  width: 600px; }
+  width: 500px; }
 
 .mainQuienSoy .button.carousel-control-prev {
   right: 2rem; }
@@ -370,11 +371,13 @@ form fieldset {
     .mainQuienSoy .textoQuien p {
       font-size: 15px; }
   .mainQuienSoy .slider {
-    justify-content: right;
-    align-items: right;
-    padding: 0.2rem; }
-  .mainQuienSoy .contentSlider {
-    width: 500px; }
+    width: 100%;
+    padding: 0.2rem;
+    overflow: hidden; }
+  .mainQuienSoy .button.carousel-control-prev {
+    right: 1rem; }
+  .mainQuienSoy .button.carousel-control-next {
+    left: 10rem; }
   .formContacto img {
     display: none; }
   .cardServicio {
