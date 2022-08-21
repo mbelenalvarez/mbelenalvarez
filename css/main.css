@@ -15,7 +15,7 @@ header a:hover, .mainIndex .menuBoton:hover {
   width: 15rem;
   font-size: 1rem; }
 
-.service ul li {
+.service ul li, .cards, .cardServicio {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
   -webkit-animation-duration: 1s;
