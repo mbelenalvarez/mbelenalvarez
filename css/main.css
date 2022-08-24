@@ -374,10 +374,8 @@ form fieldset {
     width: 100%;
     padding: 0.2rem;
     overflow: hidden; }
-  .mainQuienSoy .button.carousel-control-prev {
-    right: 1rem; }
-  .mainQuienSoy .button.carousel-control-next {
-    left: 10rem; }
+  .mainQuienSoy .ancho_an {
+    width: 80%; }
   .formContacto img {
     display: none; }
   .cardServicio {
