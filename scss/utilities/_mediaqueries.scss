@@ -84,6 +84,12 @@
         .ancho_an {
             width: 80%;
         }
+        .button.carousel-control-prev{
+            right: $medida*6;
+        }
+        .button.carousel-control-next{
+            left: $medida*15;
+        }
 }
 
     .formContacto img {
@@ -142,7 +148,8 @@
     }
     
     .menuFooter {
-        padding-left: 2rem;
+        margin-right: 2rem;
+        
     }
 }
 

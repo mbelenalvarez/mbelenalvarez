@@ -194,7 +194,8 @@ footer {
     font-size: 1rem; }
   footer div ul li a {
     color: crimson;
-    text-decoration: none; }
+    text-decoration: none;
+    margin-top: 1rem; }
 
 .titulos {
   padding: 0.5rem;
@@ -376,6 +377,10 @@ form fieldset {
     overflow: hidden; }
   .mainQuienSoy .ancho_an {
     width: 80%; }
+  .mainQuienSoy .button.carousel-control-prev {
+    right: 6rem; }
+  .mainQuienSoy .button.carousel-control-next {
+    left: 15rem; }
   .formContacto img {
     display: none; }
   .cardServicio {
@@ -409,4 +414,4 @@ form fieldset {
     .cards .card6 {
       grid-area: card6; }
   .menuFooter {
-    padding-left: 2rem; } }
+    margin-right: 2rem; } }

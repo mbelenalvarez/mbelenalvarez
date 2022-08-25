@@ -142,6 +142,7 @@ footer {
     div ul li a {
         color: nth($list: $colores, $n:5);
         text-decoration: none;
+        margin-top: $medida;
     }
 }
 
